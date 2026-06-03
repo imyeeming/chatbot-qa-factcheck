@@ -20,9 +20,9 @@ Given a chatbot response, the skill:
 
 ## Example
 
-**User question:** "What material is the MacBook Pro case made of?"
+**User question:** "What material is the laptop case made of?"
 
-**Chatbot response:** "The MacBook Pro comes in Space Black and Silver."
+**Chatbot response:** "The laptop is available in black and silver color options."
 
 **Skill output:**
 
@@ -31,20 +31,21 @@ Response type: Direct answer
 
 Overall verdict: Incorrect (Attribute Mismatch)
 
-1. Claim: MacBook Pro is available in Space Black and Silver.
+1. Claim: The laptop is available in black and silver.
    - Verdict: Correct
-   - Source: https://support.apple.com/en-us/111869
+   - Source: [manufacturer product page]
 
 2. Claim: This answers the question about case material.
    - Verdict: Incorrect
-   - Why: The question asked about material (aluminum), not color.
-     The chatbot retrieved the correct entity but answered a different
-     attribute. See: Attribute Mismatch pattern.
+   - Why: The question asked about material (e.g., aluminum, polycarbonate),
+     not color. The chatbot retrieved the correct entity but answered a
+     different attribute. See: Attribute Mismatch pattern.
 
 Bottom line: The stated facts are true, but the response fails because
-it answers the wrong question. The case material (100% recycled aluminum)
-was not mentioned.
+it answers the wrong question. The case material was never mentioned.
 ```
+
+See [examples/](examples/) for more worked examples.
 
 ## The 9 Error Patterns
 
