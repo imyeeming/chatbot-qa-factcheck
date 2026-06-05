@@ -10,7 +10,7 @@ A user asks a customer service chatbot about the material used in a laptop's con
 
 ## Chatbot Response
 
-> The laptop comes in Space Black and Silver color options, featuring a stunning new dark appearance that is anodized to create a breakthrough chemistry that etches into the surface.
+> The laptop is available in black and silver color options, with a matte finish that gives it a premium appearance.
 
 ## Skill Output
 
@@ -20,17 +20,17 @@ A user asks a customer service chatbot about the material used in a laptop's con
 
 ### Claim-by-claim findings
 
-1. **Claim:** The laptop is available in Space Black and Silver.
+1. **Claim:** The laptop is available in black and silver.
    - **Verdict:** Correct
    - **Why:** Color options are publicly documented on the manufacturer's product page.
 
-2. **Claim:** The dark appearance uses anodized etching chemistry.
+2. **Claim:** The finish is matte and gives a premium appearance.
    - **Verdict:** Correct
-   - **Why:** This finishing process is described in official product materials.
+   - **Why:** The finish is described in official product materials.
 
 3. **Claim:** This answers the user's question about case material.
    - **Verdict:** Incorrect
-   - **Why:** The user asked about *material* (e.g., aluminum, titanium, polycarbonate). The chatbot answered about *color and finish*. The facts stated are individually true, but they address the wrong attribute.
+   - **Why:** The user asked about *material* (e.g., aluminum, magnesium alloy, polycarbonate). The chatbot answered about *color and finish*. The facts stated are individually true, but they address the wrong attribute.
 
 ### Error pattern detected
 
@@ -38,4 +38,4 @@ A user asks a customer service chatbot about the material used in a laptop's con
 
 ### Bottom line
 
-The response contains accurate facts about color options and finishing processes, but completely fails to answer the actual question. The case material (recycled aluminum) was never mentioned. This is a relevance failure, not a factual error.
+The response contains accurate facts about color options and finish, but completely fails to answer the actual question. The case material was never mentioned. This is a relevance failure, not a factual error.

@@ -65,7 +65,7 @@ These are the recurring failure modes observed in production chatbot QA. Full de
 
 ## Key Design Decisions
 
-**Reviewer knowledge boundary rule.** The skill explicitly prohibits using internal model knowledge to mark a claim as Incorrect or Outdated. If the model's training data says "M4" but the chatbot says "M5", that triggers a web search — not a verdict. This prevents false positives from stale training data.
+**Reviewer knowledge boundary rule.** The skill explicitly prohibits using internal model knowledge to mark a claim as Incorrect or Outdated. If the chatbot mentions a newer product or version than the reviewing model's training data covers, that triggers a web search — not a verdict. This prevents false positives from stale training data.
 
 **Step 0: Response type classification.** Before splitting claims, the skill first determines whether the chatbot is answering, refusing, or pivoting. A refusal to publicly documented information is itself a failure mode, not a safety feature.
 

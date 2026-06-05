@@ -67,7 +67,7 @@
   Q: `What version does this device support?`
   Bad A: `It ships with the latest firmware version.` 
 - Why it happens: Ambiguous terms in the prompt are resolved incorrectly by the model, and retrieval then reinforces the wrong sense of the word.
-- Detection heuristic: Watch for overloaded terms like version, support, AirDrop, pairing, model, or compatibility. Confirm that the answer uses the same sense as the question.
+- Detection heuristic: Watch for overloaded terms like version, support, sharing, pairing, model, or compatibility. Confirm that the answer uses the same sense as the question.
 - Verdict when detected: Usually `Incorrect`, because the response answers a different semantic question.
 
 ## 8. Red Herring / ESG Shield / 不相干謬誤 / 環保盾牌
